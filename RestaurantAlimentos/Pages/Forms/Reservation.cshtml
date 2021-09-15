@@ -1,0 +1,32 @@
+﻿@page
+@model RestaurantAlimentos.Pages.Forms.ReservationModel
+@{
+    ViewData["Title"] = "Reservation";
+}
+<h1>Make Reservation</h1>
+<hr />
+<p>Please fill out the form below to book a table with us.</p>
+
+
+<form method="post">
+    @Html.AntiForgeryToken()
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+            <label>First Name</label>
+            <input type="text" asp-for="customer.FirstName" class="form-control"  required>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label>Last Name</label>
+            <input type="text" asp-for="customer.LastName" class="form-control" required>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label>Phone Number</label>
+            <input type="tel" asp-for="customer.PhoneNumber" class="form-control" required>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label>Date</label>
+            <input  type="date" asp-for="customer.Date" class="form-control"required >
+        </div>
+    </div>
+    <button class="btn btn-success" type="submit">Submit </button>
+</form>
