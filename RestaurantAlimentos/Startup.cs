@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MongoDB.Driver;
 using RestaurantAlimentos.Validation;
 using System;
 using System.Collections.Generic;
@@ -26,6 +27,11 @@ namespace RestaurantAlimentos
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddSingleton<IMongoClient, MongoClient>(s =>
+            {
+                string uri = s.GetRequiredService<IConfiguration>()["MongoUri"];
+                 return new MongoClient( uri);
+            });
             services.AddMvcCore().AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CustomerValidator>());
         }
 

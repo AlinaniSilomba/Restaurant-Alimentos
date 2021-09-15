@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Alinani\\Documents\\Temp\\RestaurantAlimentos\\RestaurantAlimentos\\RestaurantAlimentos.csproj": {}
+    "C:\\Users\\Alinani\\Documents\\Temp\\RestaurantAlimentos\\MongoDBLibrary\\MongoDBLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Alinani\\Documents\\Temp\\RestaurantAlimentos\\RestaurantAlimentos\\RestaurantAlimentos.csproj": {
+    "C:\\Users\\Alinani\\Documents\\Temp\\RestaurantAlimentos\\MongoDBLibrary\\MongoDBLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Alinani\\Documents\\Temp\\RestaurantAlimentos\\RestaurantAlimentos\\RestaurantAlimentos.csproj",
-        "projectName": "RestaurantAlimentos",
-        "projectPath": "C:\\Users\\Alinani\\Documents\\Temp\\RestaurantAlimentos\\RestaurantAlimentos\\RestaurantAlimentos.csproj",
+        "projectUniqueName": "C:\\Users\\Alinani\\Documents\\Temp\\RestaurantAlimentos\\MongoDBLibrary\\MongoDBLibrary.csproj",
+        "projectName": "MongoDBLibrary",
+        "projectPath": "C:\\Users\\Alinani\\Documents\\Temp\\RestaurantAlimentos\\MongoDBLibrary\\MongoDBLibrary.csproj",
         "packagesPath": "C:\\Users\\Alinani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Alinani\\Documents\\Temp\\RestaurantAlimentos\\RestaurantAlimentos\\obj\\",
+        "outputPath": "C:\\Users\\Alinani\\Documents\\Temp\\RestaurantAlimentos\\MongoDBLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Alinani\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,10 +40,6 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "FluentValidation.AspNetCore": {
-              "target": "Package",
-              "version": "[10.3.3, )"
-            },
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.13.1, )"
@@ -60,9 +56,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
