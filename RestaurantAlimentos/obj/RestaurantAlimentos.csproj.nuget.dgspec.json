@@ -43,6 +43,10 @@
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[10.3.3, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.13.1, )"
             }
           },
           "imports": [
