@@ -7,20 +7,25 @@ using System.Threading.Tasks;
 
 namespace MongoDBLibrary.MongoDataAccess
 {
-    public class DataAccess
+    public static class DataAccess
     {
-        public IMongoCollection<CustomerModelDB> _CustomerModelDB;
-        public DataAccess(IMongoClient client)
+        private static IMongoDatabase _db;
+        static DataAccess()
         {
-            var database = client.GetDatabase("CustomerDB");
-            _CustomerModelDB = database.GetCollection<CustomerModelDB>("Reservation");
-
+            MongoClient client = new MongoClient();
+            _db = client.GetDatabase("CustomerReservation");
         }
 
-        public Task InserCustomer (IEnumerable<CustomerModelDB> customers)
+        public static void InsertCustomer<T>(string table, T record)
         {
-            return _CustomerModelDB.InsertManyAsync(customers);
+            var collection = _db.GetCollection<T>(table);
+            collection.InsertOne(record);
         }
+
+
+
+
 
     }
+       
 }

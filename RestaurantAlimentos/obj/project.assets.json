@@ -214,6 +214,19 @@
             "rid": "win"
           }
         }
+      },
+      "MongoDBLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "MongoDB.Driver": "2.13.1"
+        },
+        "compile": {
+          "bin/placeholder/MongoDBLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MongoDBLibrary.dll": {}
+        }
       }
     }
   },
@@ -551,12 +564,18 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "MongoDBLibrary/1.0.0": {
+      "type": "project",
+      "path": "../MongoDBLibrary/MongoDBLibrary.csproj",
+      "msbuildProject": "../MongoDBLibrary/MongoDBLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "FluentValidation.AspNetCore >= 10.3.3",
-      "MongoDB.Driver >= 2.13.1"
+      "MongoDB.Driver >= 2.13.1",
+      "MongoDBLibrary >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -585,7 +604,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Alinani\\Documents\\Temp\\RestaurantAlimentos\\MongoDBLibrary\\MongoDBLibrary.csproj": {
+              "projectPath": "C:\\Users\\Alinani\\Documents\\Temp\\RestaurantAlimentos\\MongoDBLibrary\\MongoDBLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

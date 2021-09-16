@@ -27,11 +27,11 @@ namespace RestaurantAlimentos
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            services.AddSingleton<IMongoClient, MongoClient>(s =>
-            {
-                string uri = s.GetRequiredService<IConfiguration>()["MongoUri"];
-                 return new MongoClient( uri);
-            });
+            //services.AddSingleton<IMongoClient, MongoClient>(s =>
+            //{
+            //    string uri = s.GetRequiredService<IConfiguration>()["MongoUri"];
+            //     return new MongoClient( uri);
+            //});
             services.AddMvcCore().AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CustomerValidator>());
         }
 

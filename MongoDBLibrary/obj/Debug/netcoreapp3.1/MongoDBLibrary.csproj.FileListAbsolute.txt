@@ -1,0 +1,9 @@
+C:\Users\Alinani\Documents\Temp\RestaurantAlimentos\MongoDBLibrary\obj\Debug\netcoreapp3.1\MongoDBLibrary.csprojAssemblyReference.cache
+C:\Users\Alinani\Documents\Temp\RestaurantAlimentos\MongoDBLibrary\obj\Debug\netcoreapp3.1\MongoDBLibrary.AssemblyInfoInputs.cache
+C:\Users\Alinani\Documents\Temp\RestaurantAlimentos\MongoDBLibrary\obj\Debug\netcoreapp3.1\MongoDBLibrary.AssemblyInfo.cs
+C:\Users\Alinani\Documents\Temp\RestaurantAlimentos\MongoDBLibrary\obj\Debug\netcoreapp3.1\MongoDBLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Alinani\Documents\Temp\RestaurantAlimentos\MongoDBLibrary\bin\Debug\netcoreapp3.1\MongoDBLibrary.deps.json
+C:\Users\Alinani\Documents\Temp\RestaurantAlimentos\MongoDBLibrary\bin\Debug\netcoreapp3.1\MongoDBLibrary.dll
+C:\Users\Alinani\Documents\Temp\RestaurantAlimentos\MongoDBLibrary\bin\Debug\netcoreapp3.1\MongoDBLibrary.pdb
+C:\Users\Alinani\Documents\Temp\RestaurantAlimentos\MongoDBLibrary\obj\Debug\netcoreapp3.1\MongoDBLibrary.dll
+C:\Users\Alinani\Documents\Temp\RestaurantAlimentos\MongoDBLibrary\obj\Debug\netcoreapp3.1\MongoDBLibrary.pdb
