@@ -7,10 +7,13 @@
   <ItemGroup>
     <PackageReference Include="FluentValidation.AspNetCore" Version="10.3.3" />
     <PackageReference Include="MongoDB.Driver" Version="2.13.1" />
+<<<<<<< HEAD
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MongoDBLibrary\MongoDBLibrary.csproj" />
+=======
+>>>>>>> master
   </ItemGroup>
 
 </Project>
