@@ -6,18 +6,17 @@
 <h1>Our Suppliers</h1>
 
 
-<table class="table table-striped">
+<section class="Supplier-list">
+    <table class="table table-striped">
 
-    <tbody>
-        @foreach (var supplier in Model.supplier.OurSuppliers)
-        {
-            <tr>
-             
-                <td>@supplier</td>
-             
-            </tr>
+        <tbody>
+            @foreach (var supplier in Model.supplier.OurSuppliers)
+            {
+                <tr>
+                    <td>@supplier</td>
+                </tr>
+            }
 
-        }
-
-    </tbody>
-</table>
+        </tbody>
+    </table>
+</section>
