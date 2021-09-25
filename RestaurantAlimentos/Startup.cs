@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MongoDB.Driver;
+using MongoDBLibrary.MongoDataAccess;
 using RestaurantAlimentos.Validation;
 using System;
 using System.Collections.Generic;
@@ -27,11 +28,16 @@ namespace RestaurantAlimentos
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
-            //services.AddSingleton<IMongoClient, MongoClient>(s =>
-            //{
-            //    string uri = s.GetRequiredService<IConfiguration>()["MongoUri"];
-            //     return new MongoClient( uri);
-            //});
+            //This service calls the Menu items
+            services.AddTransient<MenuItemService>();
+            // this service calls the supplier service to get suppliers from database.
+            services.AddTransient<SupplierService>();
+            services.AddSingleton<IMongoClient, MongoClient>(s =>
+            {
+                string uri = s.GetRequiredService<IConfiguration>()["MongoUri"];
+                return new MongoClient(uri);
+            });
+            //This here adds validation to the reservation page.
             services.AddMvcCore().AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CustomerValidator>());
         }
 

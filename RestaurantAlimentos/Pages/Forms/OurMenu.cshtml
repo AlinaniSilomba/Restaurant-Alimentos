@@ -1,0 +1,24 @@
+﻿@page
+@model RestaurantAlimentos.Pages.Forms.OurMenuModel
+@{
+    ViewData["Title"] = "Menu";
+}
+
+<h1>Our Menu</h1>
+
+<hr />
+
+<div class="card-columns">
+
+    @foreach (var product in Model.Products)
+    {
+        <div class=" card">
+            <div class="card-img" style="background-image: url('@product.Image');"></div>
+            <div class="card-body">
+
+                <h5 class="card-title">@product.Meal @product.Price</h5>
+                <h6 class=" card-footer">@product.Description </h6>
+            </div>
+        </div>
+    }
+</div>
