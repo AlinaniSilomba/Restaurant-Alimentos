@@ -58,3 +58,4 @@ C:\Users\Alinani\Documents\Temp\RestaurantAlimentos\RestaurantAlimentos\bin\Debu
 C:\Users\Alinani\Documents\Temp\RestaurantAlimentos\RestaurantAlimentos\bin\Debug\netcoreapp3.1\runtimes\win\native\mongocrypt.dll
 C:\Users\Alinani\Documents\Temp\RestaurantAlimentos\RestaurantAlimentos\bin\Debug\netcoreapp3.1\MongoDBLibrary.dll
 C:\Users\Alinani\Documents\Temp\RestaurantAlimentos\RestaurantAlimentos\bin\Debug\netcoreapp3.1\MongoDBLibrary.pdb
+C:\Users\Alinani\Documents\Temp\RestaurantAlimentos\RestaurantAlimentos\obj\Debug\netcoreapp3.1\Razor\Pages\Forms\OurMenu.cshtml.g.cs

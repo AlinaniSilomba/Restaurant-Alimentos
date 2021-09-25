@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantAlimentos", "RestaurantAlimentos\RestaurantAlimentos.csproj", "{13217E8D-8ED5-4417-A8B9-351292C504C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDBLibrary", "MongoDBLibrary\MongoDBLibrary.csproj", "{FF15C82E-A5DD-443C-8695-C948F06BBC24}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MongoDBLibrary", "MongoDBLibrary\MongoDBLibrary.csproj", "{FF15C82E-A5DD-443C-8695-C948F06BBC24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

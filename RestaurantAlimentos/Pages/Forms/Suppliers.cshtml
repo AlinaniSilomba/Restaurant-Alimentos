@@ -10,10 +10,10 @@
     <table class="table table-striped">
 
         <tbody>
-            @foreach (var supplier in Model.supplier.OurSuppliers)
+            @foreach (var supplier in Model.BrandNames)
             {
                 <tr>
-                    <td>@supplier</td>
+                    <td>@supplier.SupplierName</td>
                 </tr>
             }
 
